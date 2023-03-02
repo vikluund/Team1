@@ -1,9 +1,10 @@
 <script setup>
-import HeroImageTest from "../components/HeroImageTest.vue"
-// import BooKing from "../components/BooKing.vue"
+
+import HeroImageTest from '../components/HeroImageTest.vue'
+import ActCards from '../components/ActCards.vue'
 </script>
 
 <template>
   <HeroImageTest />
-  <!-- <BooKing /> -->
+  <ActCards />
 </template>
