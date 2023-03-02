@@ -13,6 +13,7 @@
 </template>
 
 <style scoped>
+
 .hero-wrapper {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('../assets/media/HeroImageTest.png');
@@ -20,6 +21,8 @@
   background-size: cover;
   width: 100%;
   height: 100vh;
+  position: relative;
+  background-repeat: no-repeat;
 }
 
 .hero-text {
