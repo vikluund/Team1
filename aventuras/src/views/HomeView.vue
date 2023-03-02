@@ -1,5 +1,4 @@
 <script setup>
-
 import HeroImageTest from '../components/HeroImageTest.vue'
 import ActCards from '../components/ActCards.vue'
 </script>
@@ -8,3 +7,5 @@ import ActCards from '../components/ActCards.vue'
   <HeroImageTest />
   <ActCards />
 </template>
+
+<style scoped></style>

@@ -1,6 +1,4 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-</script>
+<script setup></script>
 
 <template>
   <nav class="navbar bg-body-tertiary fixed-top">
@@ -30,7 +28,6 @@ import { RouterLink, RouterView } from 'vue-router'
                 id="offcanvasTop"
                 aria-labelledby="offcanvasTopLabel"
               >
-
                 <div class="offcanvas-body">
                   <div class="container text-center">
                     <div class="row align-items-center">
@@ -148,7 +145,6 @@ import { RouterLink, RouterView } from 'vue-router'
       </div>
     </div>
   </nav>
-  <RouterView />
 </template>
 
 <style scoped>
@@ -181,12 +177,12 @@ import { RouterLink, RouterView } from 'vue-router'
 }
 
 .card {
-    border: transparent;
+  border: transparent;
 }
 
 .card-img-top {
-    border-bottom-left-radius: 3%;
-    border-bottom-right-radius: 3%;
+  border-bottom-left-radius: 3%;
+  border-bottom-right-radius: 3%;
 }
 
 .card-title {
@@ -196,18 +192,18 @@ import { RouterLink, RouterView } from 'vue-router'
   transform: translate(-50%, -50%);
   color: white;
 }
-.offcanvas-top {  
-    margin-top: 60px;
-    height: 25%;
-    width: 80%;
-    background-color: rgba(66, 66, 66, 0.6);
-    margin-left: 10%;
+.offcanvas-top {
+  margin-top: 60px;
+  height: 25%;
+  width: 80%;
+  background-color: rgba(66, 66, 66, 0.6);
+  margin-left: 10%;
 }
-.offcanvas-top > .offcanvas-body{
-    padding-top: 23px;
-    padding-bottom: 0px;
-    padding-right: 0;
-    padding-left: 30px;
+.offcanvas-top > .offcanvas-body {
+  padding-top: 23px;
+  padding-bottom: 0px;
+  padding-right: 0;
+  padding-left: 30px;
 }
 
 .btn-primary {
