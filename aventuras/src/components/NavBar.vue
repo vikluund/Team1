@@ -1,13 +1,111 @@
 <script setup>
-import { RouterLink, RouterView } from "vue-router"
+import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
   <nav class="navbar bg-body-tertiary fixed-top">
     <div class="container-fluid d-flex justify-content-between align-items-center">
-      <RouterLink class="navbar-brand" to="/"
-        ><img src="../assets/media/AventurasLogo.png" class="img-fluid" alt="Logo" />
-      </RouterLink>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <span class="nav-item">
+              <RouterLink class="nav-link" aria-current="page" to="/">HOME</RouterLink>
+            </span>
+          </div>
+          <div class="col">
+            <span class="nav-item">
+              <button
+                class="btn btn-primary"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasTop"
+                aria-controls="offcanvasTop"
+              >
+                SEASON
+              </button>
+
+              <div
+                class="offcanvas offcanvas-top"
+                tabindex="-1"
+                id="offcanvasTop"
+                aria-labelledby="offcanvasTopLabel"
+              >
+                <div class="offcanvas-body">
+                  <div class="container text-center">
+                    <div class="row align-items-center">
+                      <div class="col">
+                        <div class="card" style="width: 12rem">
+                          <img src="../assets/media/Spring.png" class="card-img-top" alt="..." />
+                          <h5 class="card-title">
+                            <RouterLink class="nav-link" aria-current="page" to="/"
+                              >SPRING</RouterLink
+                            >
+                          </h5>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card" style="width: 12rem">
+                          <img src="../assets/media/Summer.png" class="card-img-top" alt="..." />
+                          <h5 class="card-title">
+                            <RouterLink class="nav-link" aria-current="page" to="/"
+                              >SUMMER</RouterLink
+                            >
+                          </h5>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card" style="width: 12rem">
+                          <img src="../assets/media/Autumn.png" class="card-img-top" alt="..." />
+                          <h5 class="card-title">
+                            <RouterLink class="nav-link" aria-current="page" to="/"
+                              >AUTUMN</RouterLink
+                            >
+                          </h5>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card" style="width: 12rem">
+                          <img src="../assets/media/Winter.png" class="card-img-top" alt="..." />
+                          <h5 class="card-title">
+                            <RouterLink class="nav-link" aria-current="page" to="/"
+                              >WINTER</RouterLink
+                            >
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <RouterLink class="nav-link" aria-current="page" to="/season"></RouterLink>
+            </span>
+          </div>
+
+          <div class="col">
+            <RouterLink class="navbar-brand" to="/"
+              ><img src="../assets/media/AventurasLogo.png" class="img-fluid" alt="Logo" />
+            </RouterLink>
+          </div>
+          <div class="col">
+            <span class="nav-item">
+              <RouterLink class="nav-link" aria-current="page" to="/activities"
+                >ACTIVITIES</RouterLink
+              >
+            </span>
+          </div>
+
+          <div class="col">
+            <span class="nav-item">
+              <RouterLink class="nav-link" aria-current="page" to="/about">ABOUT</RouterLink>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-logo d-block d-md-none">
+        <RouterLink class="navbar-brand" to="/"
+          ><img src="../assets/media/AventurasLogo.png" class="img-fluid" alt="Logo" />
+        </RouterLink>
+      </div>
       <button
         class="navbar-toggler d-block d-md-none"
         type="button"
@@ -15,7 +113,7 @@ import { RouterLink, RouterView } from "vue-router"
         data-bs-target="#offcanvasNavbar"
         aria-controls="offcanvasNavbar"
       >
-      <i class="bi bi-grid-3x3-gap-fill"></i>
+        <i class="bi bi-grid-3x3-gap-fill"></i>
       </button>
       <div
         class="offcanvas offcanvas-end"
@@ -24,28 +122,15 @@ import { RouterLink, RouterView } from "vue-router"
         aria-labelledby="offcanvasNavbarLabel"
       >
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-            Aventuras
-          </h5>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          >
-        </button>
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">AVENTURAS</h5>
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-              <RouterLink class="nav-link" aria-current="page" to="/"
-                >Home</RouterLink
-              >
+              <RouterLink class="nav-link" aria-current="page" to="/">Home</RouterLink>
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" aria-current="page" to="/Season"
-                >Season</RouterLink
-              >
+              <RouterLink class="nav-link" aria-current="page" to="/Season">Season</RouterLink>
             </li>
             <li class="nav-item">
               <RouterLink class="nav-link" aria-current="page" to="/Activities"
@@ -53,19 +138,7 @@ import { RouterLink, RouterView } from "vue-router"
               >
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" aria-current="page" to="/inspiration"
-                >Inspiration</RouterLink
-              >
-            </li>
-            <li class="nav-item">
-              <RouterLink class="nav-link" aria-current="page" to="/about"
-                >About</RouterLink
-              >
-            </li>
-            <li class="nav-item">
-              <RouterLink class="nav-link" aria-current="page" to="/contact"
-                >Contact</RouterLink
-              >
+              <RouterLink class="nav-link" aria-current="page" to="/about">About</RouterLink>
             </li>
           </ul>
         </div>
@@ -74,27 +147,79 @@ import { RouterLink, RouterView } from "vue-router"
   </nav>
   <RouterView />
 </template>
-<style scoped>
 
-@media (min-width: 415px) {
-  .navbar-toggler {
+<style scoped>
+@media (max-width: 967px) {
+  .container {
     display: none;
   }
 }
-.navbar {
+
+@media (min-width: 768px) {
+  .navbar {
+    top: 10px;
+    padding-bottom: 12px;
+    border-color: white;
+    border-style: solid;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom-width: 1px;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+    justify-items: center;
+  }
+}
+.img-fluid {
+  margin-top: -5px;
+}
+.card {
+  border: transparent;
+}
+.card-img-top {
+  border-radius: 0;
+  filter: brightness(55%);
+}
+.card-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.offcanvas-top {
+  margin-top: 60px;
+  height: 19%;
+  background-color: rgba(15, 15, 15, 0.5);
+}
+.offcanvas-top > .offcanvas-body {
+  padding-top: 23px;
+  padding-right: 0px;
+}
+.offcanvas-body .row {
+  padding-left: 5%;
+}
+.btn-primary {
   background-color: transparent;
+  border: transparent;
+  font-family: 'Montserrat', sans-serif;
+  font-size: small;
+  margin: -20px;
+  padding: 9px 0 0;
+}
+.offcanvas-end {
+  width: 60%;
+  background-color: rgba(40, 88, 20, 0.9);
+  font-family: 'Montserrat', sans-serif;
 }
 .offcanvas-header {
-  background-color: rgb(87, 87, 87);
+  background-color: white;
 }
 .offcanvas-title {
-  color: white;
+  color: black;
 }
-.navbar-brand {
-  color: white;
-  font-family: monospace;
-}
-
 .bi-grid-3x3-gap-fill {
   color: white;
 }
@@ -103,22 +228,18 @@ import { RouterLink, RouterView } from "vue-router"
   top: 0;
   right: 0;
   transform: translate(-10%, 50%);
-  background-color: transparent;
   color: transparent;
   border: 0px;
+  padding-top: 0px;
+  padding-right: 8px;
 }
-.btn-close {
-  color: white;
-  background-color: white;
+.offcanvas-end > .offcanvas-body {
+  background-color: rgba(66, 66, 66, 0.6);
 }
-.offcanvas-body {
-  background-color: rgb(66, 66, 66);
-  background-image: url(../assets/imgs/R2D2OffCanvas.png);
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 .nav-link {
   color: white;
+  padding-top: 5px;
 }
+
+
 </style>
