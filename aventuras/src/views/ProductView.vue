@@ -1,5 +1,6 @@
 <script setup>
 import ProductImage from "../components/ProductImage.vue"
+import BooKing from "../components/BooKing.vue"
 </script>
 
 <template>
@@ -17,7 +18,7 @@ import ProductImage from "../components/ProductImage.vue"
     <div class="overlay"></div>
     <img src="../assets/media/glade-optics-ttGLlNElbCc-unsplash.jpg" alt="Product Image 1">
   </div>
-  <div class="booking"></div>
+  <BooKing />
 </template>
 
 <style scoped>
