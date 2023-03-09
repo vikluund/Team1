@@ -1,9 +1,9 @@
 <script setup>
 import HeroImageTest from '../components/HeroImageTest.vue'
-import ActCards from '../components/ActCards.vue'
+import NewCards from '../components/NewCards.vue'
 </script>
 
 <template>
   <HeroImageTest />
-  <ActCards />
+  <NewCards />
 </template>
