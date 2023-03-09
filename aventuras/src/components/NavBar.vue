@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+import { RouterLink, RouterView } from 'vue-router'
+</script>
 
 <template>
   <nav class="navbar bg-body-tertiary fixed-top">
@@ -34,25 +36,41 @@
                       <div class="col">
                         <div class="card" style="width: 12rem">
                           <img src="../assets/media/Spring.png" class="card-img-top" alt="..." />
-                          <h5 class="card-title">SPRING</h5>
+                          <h5 class="card-title">
+                            <RouterLink class="nav-link" aria-current="page" to="/"
+                              >SPRING</RouterLink
+                            >
+                          </h5>
                         </div>
                       </div>
                       <div class="col">
                         <div class="card" style="width: 12rem">
                           <img src="../assets/media/Summer.png" class="card-img-top" alt="..." />
-                          <h5 class="card-title">SUMMER</h5>
+                          <h5 class="card-title">
+                            <RouterLink class="nav-link" aria-current="page" to="/"
+                              >SUMMER</RouterLink
+                            >
+                          </h5>
                         </div>
                       </div>
                       <div class="col">
                         <div class="card" style="width: 12rem">
                           <img src="../assets/media/Autumn.png" class="card-img-top" alt="..." />
-                          <h5 class="card-title">AUTUMN</h5>
+                          <h5 class="card-title">
+                            <RouterLink class="nav-link" aria-current="page" to="/"
+                              >AUTUMN</RouterLink
+                            >
+                          </h5>
                         </div>
                       </div>
                       <div class="col">
                         <div class="card" style="width: 12rem">
                           <img src="../assets/media/Winter.png" class="card-img-top" alt="..." />
-                          <h5 class="card-title">WINTER</h5>
+                          <h5 class="card-title">
+                            <RouterLink class="nav-link" aria-current="page" to="/"
+                              >WINTER</RouterLink
+                            >
+                          </h5>
                         </div>
                       </div>
                     </div>
@@ -63,27 +81,15 @@
             </span>
           </div>
           <div class="col">
-            <span class="nav-item">
-              <RouterLink class="nav-link" aria-current="page" to="/activities"
-                >ACTIVITIES</RouterLink
-              >
-            </span>
-          </div>
-          <div class="col">
             <RouterLink class="navbar-brand" to="/"
               ><img src="../assets/media/AventurasLogo.png" class="img-fluid" alt="Logo" />
             </RouterLink>
           </div>
           <div class="col">
             <span class="nav-item">
-              <RouterLink class="nav-link" aria-current="page" to="/inspiration"
-                >INSPIRATION</RouterLink
+              <RouterLink class="nav-link" aria-current="page" to="/activities"
+                >ACTIVITIES</RouterLink
               >
-            </span>
-          </div>
-          <div class="col">
-            <span class="nav-item">
-              <RouterLink class="nav-link" aria-current="page" to="/contact">CONTACT</RouterLink>
             </span>
           </div>
           <div class="col">
@@ -119,10 +125,10 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-              <RouterLink class="nav-link" aria-current="page" to="/">HOME</RouterLink>
+              <RouterLink class="nav-link" aria-current="page" to="/">Home</RouterLink>
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" aria-current="page" to="/Season">SEASON</RouterLink>
+              <RouterLink class="nav-link" aria-current="page" to="/Season">Season</RouterLink>
             </li>
             <li class="nav-item">
               <RouterLink class="nav-link" aria-current="page" to="/Activities"
@@ -130,15 +136,7 @@
               >
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" aria-current="page" to="/inspiration"
-                >INSPIRATION</RouterLink
-              >
-            </li>
-            <li class="nav-item">
-              <RouterLink class="nav-link" aria-current="page" to="/about">ABOUT</RouterLink>
-            </li>
-            <li class="nav-item">
-              <RouterLink class="nav-link" aria-current="page" to="/contact">CONTACT</RouterLink>
+              <RouterLink class="nav-link" aria-current="page" to="/about">About</RouterLink>
             </li>
           </ul>
         </div>
@@ -148,21 +146,16 @@
 </template>
 
 <style scoped>
-@media (max-width: 768px) {
+@media (max-width: 967px) {
   .container {
     display: none;
   }
 }
 
-@media (min-width: 415px) {
-  .navbar-toggler {
-    display: none;
-  }
-}
 @media (min-width: 768px) {
   .navbar {
     top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
     border-color: white;
     border-style: solid;
     border-top: transparent;
@@ -172,19 +165,20 @@
     margin-left: 200px;
     margin-right: 200px;
     font-family: 'Montserrat', sans-serif;
-    font-size: smaller;
+    font-size: small;
+    justify-items: center;
   }
 }
-
+.img-fluid {
+  margin-top: -5px;
+}
 .card {
   border: transparent;
 }
-
 .card-img-top {
-  border-bottom-left-radius: 3%;
-  border-bottom-right-radius: 3%;
+  border-radius: 0;
+  filter: brightness(55%);
 }
-
 .card-title {
   position: absolute;
   top: 50%;
@@ -194,35 +188,34 @@
 }
 .offcanvas-top {
   margin-top: 60px;
-  height: 25%;
-  width: 80%;
-  background-color: rgba(66, 66, 66, 0.6);
-  margin-left: 10%;
+  height: 19%;
+  background-color: rgba(15, 15, 15, 0.5);
 }
 .offcanvas-top > .offcanvas-body {
   padding-top: 23px;
-  padding-bottom: 0px;
-  padding-right: 0;
-  padding-left: 30px;
+  padding-right: 0px;
 }
-
+.offcanvas-body .row {
+  padding-left: 5%;
+}
 .btn-primary {
   background-color: transparent;
   border: transparent;
   font-family: 'Montserrat', sans-serif;
   font-size: small;
   margin: -20px;
+  padding: 9px 0 0;
 }
 .offcanvas-end {
-  width: 50%;
-  background-color: transparent;
+  width: 60%;
+  background-color: rgba(40, 88, 20, 0.9);
   font-family: 'Montserrat', sans-serif;
 }
 .offcanvas-header {
-  background-color: rgb(13, 104, 92);
+  background-color: white;
 }
 .offcanvas-title {
-  color: white;
+  color: black;
 }
 .bi-grid-3x3-gap-fill {
   color: white;
@@ -232,15 +225,17 @@
   top: 0;
   right: 0;
   transform: translate(-10%, 50%);
-  background-color: transparent;
   color: transparent;
   border: 0px;
+  padding-top: 0px;
+  padding-right: 8px;
 }
 .offcanvas-end > .offcanvas-body {
   background-color: rgba(66, 66, 66, 0.6);
 }
-
 .nav-link {
   color: white;
+  padding-top: 5px;
 }
+
 </style>
