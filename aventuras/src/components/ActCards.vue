@@ -1,16 +1,5 @@
 <template>
   <div id="main-container">
-    <!-- <section>
-      <h1>Autumn looks great in green</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ea veritatis repudiandae
-        delectus ipsam voluptate harum reprehenderit possimus alias aliquam consequatur, cupiditate
-        autem facilis et. Modi eligendi commodi voluptate consequuntur?Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Vel ea veritatis repudiandae delectus ipsam voluptate harum
-        reprehenderit possimus alias aliquam consequatur, cupiditate autem facilis et. Modi eligendi
-        commodi voluptate consequuntur?
-      </p>
-    </section> -->
     <div class="main-container">
       <div id="card-container">
         <div class="content1"></div>
@@ -127,6 +116,7 @@ h2 {
     'content7 content8'
     'content9 content10';
   font-family: 'Montserrat', sans-serif;
+  margin-top: 20%;
 }
 
 @media (max-width: 550px) {
