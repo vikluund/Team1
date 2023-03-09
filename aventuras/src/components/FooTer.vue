@@ -4,16 +4,13 @@
     <div class="container p-4">
       <section class="mb-4">
         <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="bi bi-youtube"></i
-        ></a>
+          ><i class="bi bi-youtube"></i></a>
 
         <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-facebook-f"></i
-        ></a>
+          ><i class="bi bi-facebook"></i></a>
 
         <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-instagram"></i
-        ></a>
+          ><i class="bi bi-instagram"></i></a>
       </section>
 
       <section class="">
@@ -51,11 +48,11 @@
       </section>
 
       <section class="mb-4">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum repellat
-          quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam eum harum
-          corrupti dicta, aliquam sequi voluptate quas.
-        </p>
+        <div class="col">
+            <RouterLink class="navbar-brand" to="/"
+              ><img src="../assets/media/AventurasLogo.png" class="img-fluid" alt="Logo" />
+            </RouterLink>
+          </div>
       </section>
     </div>
 
@@ -78,7 +75,6 @@ export default {
 
   methods: {
     onSubmit(event) {
-      // this.message =`Thanks for subscribing  ${this.userName}`
       this.message = `Thanks for subscribing `
       event.preventDefault()
     }
@@ -87,17 +83,11 @@ export default {
 </script>
 
 <style scoped>
-#all-footer {
-  /* margin-top: 30vh; */
-}
+
 
 #message {
   color: red;
   font-weight: 600;
   font-size: 20px;
 }
-/*
-#all-footer{
-    position: fixed;
-} */
 </style>
