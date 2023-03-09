@@ -2,6 +2,7 @@
 
 <template>
   <div class="hero-wrapper">
+    <img src="../assets/media/HeroImage 1NY.png" alt="" />
     <div class="hero-text">
       <h1>AVENTURAS</h1>
     </div>
@@ -13,16 +14,19 @@
 </template>
 
 <style scoped>
-
 .hero-wrapper {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../assets/media/HeroImageTest.png');
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  background-repeat: no-repeat;
+}
+
+.hero-wrapper img {
+  margin: 0 auto;
+  height: auto;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .hero-text {
@@ -31,22 +35,29 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  border-style: solid;
-  padding: 10px;
+  border: 0.3vw solid white;
+  padding: 20px;
   font-family: 'Montserrat', sans-serif;
 }
 
+.hero-text {
+  font-size: 5vw;
+}
 .infoText {
-  position: absolute;
-  text-align: center;
-  margin-top: 150px;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   color: black;
   font-family: 'Montserrat', sans-serif;
+  padding-top: 10vh;
 }
-
-p {
-  margin-top: 50px;
+.infoText h2 {
+  font-size: 5vw;
+}
+.infoText p {
+  margin-top: 5vh;
+  margin-bottom: 6vh;
+  font-size: 3vw;
 }
 </style>
