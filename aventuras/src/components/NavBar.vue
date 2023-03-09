@@ -1,6 +1,4 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-</script>
+<script setup></script>
 
 <template>
   <nav class="navbar bg-body-tertiary fixed-top">
@@ -237,5 +235,4 @@ import { RouterLink, RouterView } from 'vue-router'
   color: white;
   padding-top: 5px;
 }
-
 </style>
