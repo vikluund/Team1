@@ -1,15 +1,17 @@
 <template>
-  <div class="seasons-container">
-    <div :class="season.class" v-for="(season, index) in seasons" :key="index">
-      <!--- change to router link --->
-      <a href="#" class="seasons-link"
-        ><p class="border-white">{{ season.name }}</p></a
-      >
+  <div class="seasons-wrapper">
+    <h2 class="seasons-text">Pick your adventure by season</h2>
+    <div class="seasons-container">
+      <div :class="season.class" v-for="(season, index) in seasons" :key="index">
+        <RouterLink :to="season.linkPath" class="seasons-link"
+          ><p class="border-white">{{ season.name }}</p></RouterLink
+        >
+      </div>
     </div>
   </div>
 </template>
 
-<script lang="ts">
+<script>
 export default {
   data() {
     return {
@@ -49,30 +51,30 @@ a {
 .season1 {
   grid-area: spring;
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
-    url(../assets/img/seasonmenu-spring.jpg) no-repeat center;
+    url(../assets/media/seasonmenu-spring.jpg) no-repeat center;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
-    url(../assets/img/seasonmenu-spring.jpg) no-repeat center;
+    url(../assets/media/seasonmenu-spring.jpg) no-repeat center;
 }
 .season2 {
   grid-area: summer;
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
-    url(../assets/img/seasonmenu-summer.jpg) no-repeat center;
+    url(../assets/media/seasonmenu-summer.jpg) no-repeat center;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
-    url(../assets/img/seasonmenu-summer.jpg) no-repeat center;
+    url(../assets/media/seasonmenu-summer.jpg) no-repeat center;
 }
 .season3 {
   grid-area: autumn;
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
-    url(../assets/img/seasonmenu-autumn.jpg) no-repeat center;
+    url(../assets/media/seasonmenu-autumn.jpg) no-repeat center;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
-    url(../assets/img/seasonmenu-autumn.jpg) no-repeat center;
+    url(../assets/media/seasonmenu-autumn.jpg) no-repeat center;
 }
 .season4 {
   grid-area: winter;
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
-    url(../assets/img/seasonmenu-winter.jpg) no-repeat center;
+    url(../assets/media/seasonmenu-winter.jpg) no-repeat center;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
-    url(../assets/img/seasonmenu-winter.jpg) no-repeat center;
+    url(../assets/media/seasonmenu-winter.jpg) no-repeat center;
 }
 
 .season1,
@@ -85,7 +87,16 @@ a {
   height: 300px;
   background-size: cover;
 }
+.seasons-wrapper {
+  margin: 5vh 0;
+}
 
+.seasons-text {
+  text-transform: uppercase;
+  text-align: center;
+  color: #2a5024;
+  margin: 2rem 0;
+}
 .seasons-container {
   width: 100%;
   display: grid;
@@ -121,7 +132,6 @@ a {
   color: #000;
   mix-blend-mode: screen;
   backdrop-filter: blur(1.5px);
-  box-shadow: 5px 6px 6px 2px rgba(0, 0, 0, 0.3);
   transform: scale(1.02);
 }
 
