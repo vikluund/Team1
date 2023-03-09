@@ -80,7 +80,6 @@ import { RouterLink, RouterView } from 'vue-router'
               <RouterLink class="nav-link" aria-current="page" to="/season"></RouterLink>
             </span>
           </div>
-
           <div class="col">
             <RouterLink class="navbar-brand" to="/"
               ><img src="../assets/media/AventurasLogo.png" class="img-fluid" alt="Logo" />
@@ -93,7 +92,6 @@ import { RouterLink, RouterView } from 'vue-router'
               >
             </span>
           </div>
-
           <div class="col">
             <span class="nav-item">
               <RouterLink class="nav-link" aria-current="page" to="/about">ABOUT</RouterLink>
@@ -134,7 +132,7 @@ import { RouterLink, RouterView } from 'vue-router'
             </li>
             <li class="nav-item">
               <RouterLink class="nav-link" aria-current="page" to="/Activities"
-                >Activities</RouterLink
+                >ACTIVITIES</RouterLink
               >
             </li>
             <li class="nav-item">
@@ -145,7 +143,6 @@ import { RouterLink, RouterView } from 'vue-router'
       </div>
     </div>
   </nav>
-  <RouterView />
 </template>
 
 <style scoped>
@@ -240,6 +237,5 @@ import { RouterLink, RouterView } from 'vue-router'
   color: white;
   padding-top: 5px;
 }
-
 
 </style>
