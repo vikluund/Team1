@@ -85,14 +85,12 @@
           </div>
           <div class="col">
             <span class="nav-item">
-              <RouterLink class="nav-link" aria-current="page" to="/activities"
-                >ACTIVITIES</RouterLink
-              >
+              <RouterLink class="nav-link" aria-current="page" to="/activities">ABOUT</RouterLink>
             </span>
           </div>
           <div class="col">
             <span class="nav-item">
-              <RouterLink class="nav-link" aria-current="page" to="/about">ABOUT</RouterLink>
+              <RouterLink class="nav-link" aria-current="page" to="/about">LOGIN</RouterLink>
             </span>
           </div>
         </div>
@@ -129,11 +127,6 @@
               <RouterLink class="nav-link" aria-current="page" to="/Season">Season</RouterLink>
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" aria-current="page" to="/Activities"
-                >ACTIVITIES</RouterLink
-              >
-            </li>
-            <li class="nav-item">
               <RouterLink class="nav-link" aria-current="page" to="/about">About</RouterLink>
             </li>
           </ul>
@@ -167,6 +160,9 @@
     justify-items: center;
   }
 }
+.fixed-top {
+  position: absolute;
+}
 .img-fluid {
   margin-top: -5px;
 }
@@ -186,7 +182,7 @@
 }
 .offcanvas-top {
   margin-top: 60px;
-  height: 19%;
+  height: 180px;
   background-color: rgba(15, 15, 15, 0.5);
 }
 .offcanvas-top > .offcanvas-body {
@@ -206,14 +202,14 @@
 }
 .offcanvas-end {
   width: 60%;
-  background-color: rgba(40, 88, 20, 0.9);
+  background-color: rgba(40, 88, 20, 0.8);
   font-family: 'Montserrat', sans-serif;
 }
 .offcanvas-header {
-  background-color: white;
+  background-color: rgb(53, 52, 52);
 }
 .offcanvas-title {
-  color: black;
+  color: white;
 }
 .bi-grid-3x3-gap-fill {
   color: white;
