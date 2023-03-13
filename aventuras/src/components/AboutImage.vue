@@ -5,14 +5,15 @@
   <div class="about-wrapper">
     <img src="../assets/media/HeroAbout.png" alt="" />
     <div class="about-text">
-      <h1>ABOUT</h1>
+      <h1>ABOUT US</h1>
     </div>
   </div>
   <div class="visionText">
-    <h2>VISION.</h2>
+    <h2>OUR VISION</h2>
     <p>
-      Lorem ipsum dolor sit amet consectetur. Adipiscing nam non tellus pretium. Aliquet massa
-      elementum aliquam donec feugiat volutpat. Magna neque non ligula.
+      To create a world, where everyone is encouraged to travel. We believe that travelling broadens
+      the mind and changes the way you think. The people you meet and the experiences you have give
+      you an improved ability to empathise with different situations and people.
     </p>
   </div>
 </template>
