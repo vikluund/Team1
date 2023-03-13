@@ -216,13 +216,20 @@
     height: 3rem;
   }
   .btn {
-    border-radius: 0;
-    background-color: #2a5024;
-    border: none;
-    color: white;
+    /* border-radius: 0; */
+    /* border: none; */
     padding: 0.5rem;
     margin-top: 1rem;
+    background-color: white;
+  color: #2a5024;
+  border: solid 3px #2a5024;
+  font-weight: 500;
   }
+
+.btn:hover {
+  color: white;
+  background-color: #2a5024;
+}
   .line2 {
     content: '';
     display: block;

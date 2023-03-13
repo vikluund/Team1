@@ -4,21 +4,24 @@
     <div class="container p-4">
       <section class="mb-4">
         <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="bi bi-youtube"></i></a>
+          ><i class="bi bi-youtube"></i
+        ></a>
 
         <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="bi bi-facebook"></i></a>
+          ><i class="bi bi-facebook"></i
+        ></a>
 
         <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="bi bi-instagram"></i></a>
+          ><i class="bi bi-instagram"></i
+        ></a>
       </section>
 
-      <section class="">
+      <section class="newsletter">
         <form @submit="onSubmit" action="">
           <div class="row d-flex justify-content-center">
             <div class="col-auto">
               <p class="pt-2">
-                <strong>Sign up for our newsletter</strong>
+                <strong>Sign up for newsletter</strong>
               </p>
             </div>
 
@@ -49,10 +52,10 @@
 
       <section class="mb-4">
         <div class="col">
-            <RouterLink class="navbar-brand" to="/"
-              ><img src="../assets/media/AventurasLogo.png" class="img-fluid" alt="Logo" />
-            </RouterLink>
-          </div>
+          <RouterLink class="navbar-brand" to="/"
+            ><img src="../assets/media/AventurasLogo.png" class="img-fluid" alt="Logo" />
+          </RouterLink>
+        </div>
       </section>
     </div>
 
@@ -83,11 +86,21 @@ export default {
 </script>
 
 <style scoped>
-
-
 #message {
   color: red;
   font-weight: 600;
   font-size: 20px;
 }
+/* #form5Example21{
+    width: 325px;
+    width:90%;
+
+} */
+
+/* #all-footer > div.container.p-4 > section.newsletter > form > div{
+    margin-right: 90px;
+} */
+/* .newsletter{
+    margin-right: 60px;
+} */
 </style>

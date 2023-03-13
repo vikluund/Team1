@@ -18,7 +18,6 @@
 
       <!--First Row-->
       <div class="form-group">
-        <label for="first">First name</label>
         <input
           type="text"
           v-model="firstName"
@@ -27,8 +26,8 @@
           placeholder="First name"
         />
       </div>
+      <br />
       <div class="form-group">
-        <label for="last">Last name</label>
         <input
           type="text"
           v-model="lastName"
@@ -37,9 +36,8 @@
           placeholder="Last name"
         />
       </div>
-
+      <br />
       <div class="form-group">
-        <label for="email">E-mail</label>
         <input type="email" class="form-control" id="email" placeholder="E-mail" v-model="email" />
       </div>
 
@@ -106,7 +104,9 @@
       {{message}}</label> -->
     </div>
   </div>
-  <span id="message" v-if="message !== null"><i id="confirm" class="bi bi-check-circle-fill"></i>{{ message }} </span>
+  <span id="message" v-if="message !== null"
+    ><i id="confirm" class="bi bi-check-circle-fill"></i>{{ message }}
+  </span>
 </template>
 
 <script>
@@ -222,12 +222,10 @@ select:focus {
 #btn-book-now:hover {
   color: white;
   background-color: #2a5024;
-
-}#confirm{
+}
+#confirm {
   font-size: 20px;
   color: rgb(39, 193, 25);
-
-
 }
 
 #message {
@@ -238,7 +236,6 @@ select:focus {
   font-weight: 500;
   margin-bottom: 10vh;
 }
-
 
 @media only screen and (max-width: 600px) {
   .card {
