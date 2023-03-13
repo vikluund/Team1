@@ -96,6 +96,8 @@ a {
   text-align: center;
   color: #2a5024;
   margin: 2rem 0;
+  background-color: rgb(224, 222, 222);
+  margin-bottom: 0;
 }
 .seasons-container {
   width: 100%;

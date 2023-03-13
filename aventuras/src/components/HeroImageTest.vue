@@ -2,14 +2,14 @@
 
 <template>
   <div class="hero-wrapper">
-    <img src="../assets/media/HeroImage 1NY.png" alt="" />
+    <img src="../assets/media/HeroImageTest.png" alt="" />
     <div class="hero-text">
       <h1>AVENTURAS</h1>
     </div>
   </div>
   <div class="infoText">
     <h2>DISCOVER IT. LOVE IT. CHERISH IT.</h2>
-    <p>Book your new adventures today!</p>
+    <!-- <p>Book your new adventures today!</p> -->
   </div>
 </template>
 
@@ -51,9 +51,10 @@
   color: black;
   font-family: 'Montserrat', sans-serif;
   padding-top: 10vh;
+  padding-bottom: 5vh;
 }
 .infoText h2 {
-  font-size: 5vw;
+  font-size: 4vw;
 }
 .infoText p {
   margin-top: 5vh;
