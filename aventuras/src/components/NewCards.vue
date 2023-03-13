@@ -222,13 +222,18 @@
 
 }
 .btn {
-  border-radius: 0;
-  background-color: #2a5024;
-  border: none;
-  color: white;
   padding: 0.5rem;
   margin-top: 1rem;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+  color: #2a5024;
+  font-weight: 500;
+  border: solid 3px #2a5024;
+}
+
+.btn:hover {
+  color: white;
+  background-color: #2a5024;
 }
 .line2 {
   content: '';

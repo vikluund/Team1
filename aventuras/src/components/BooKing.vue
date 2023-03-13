@@ -8,7 +8,6 @@
     <!--Card-Body-->
     <div class="card-body">
       <!--Card-Title-->
-      <!-- <p class="card-title text-center shadow mb-5 rounded">Search For Availability</p> -->
       <p class="title">Search For Availability</p>
       <div class="icons text-center">
         <i class="fas fa-hiking" style="font-size: 48px; color: #2a5024"></i>
@@ -18,7 +17,6 @@
 
       <!--First Row-->
       <div class="form-group">
-        <label for="first"></label>
         <input
           type="text"
           v-model="firstName"
@@ -28,7 +26,6 @@
         />
       </div>
       <div class="form-group">
-        <label for="last"></label>
         <input
           type="text"
           v-model="lastName"
@@ -39,7 +36,6 @@
       </div>
 
       <div class="form-group">
-        <label for="email"></label>
         <input type="email" class="form-control" id="email" placeholder="E-mail" v-model="email" />
       </div>
 
@@ -101,9 +97,6 @@
         value="Book now"
         :disabled="firstName.length === 0 && lastName.length === 0"
       />
-
-      <!-- <label id="message" v-if="message !== null" class="form-label" for="form5Example21">
-      {{message}}</label> -->
     </div>
   </div>
   <span id="message" v-if="message !== null"
@@ -159,11 +152,7 @@ div.card-body {
 .btn2 {
   margin-left: 10%;
 }
-/* input {
-  outline: 0 !important;
-  border-width: 0 0 2px !important;
-  border-color: #d1d1cf !important;
-} */
+
 input:focus {
   border-color: #5e5e5d !important;
   -webkit-box-shadow: none !important;
@@ -217,7 +206,6 @@ select:focus {
   background-color: white;
   color: #2a5024;
   text-align: center;
-  /* transition: all 0.5s ease; */
   font-weight: 500;
   border: solid 3px #2a5024;
 }
