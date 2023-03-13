@@ -1,20 +1,25 @@
 <script setup></script>
 
 <template>
-  <div class="hero-wrapper">
-    <img src="../assets/media/HeroImageTest.png" alt="" />
-    <div class="hero-text">
-      <h1>AVENTURAS</h1>
+  <About />
+  <div class="about-wrapper">
+    <img src="../assets/media/HeroAbout.png" alt="" />
+    <div class="about-text">
+      <h1>ABOUT US</h1>
     </div>
   </div>
-  <div class="infoText">
-    <h2>DISCOVER IT. LOVE IT. CHERISH IT.</h2>
-    <!-- <p>Book your new adventures today!</p> -->
+  <div class="visionText">
+    <h2>OUR VISION</h2>
+    <p>
+      To create a world, where everyone is encouraged to travel. We believe that travelling broadens
+      the mind and changes the way you think. The people you meet and the experiences you have give
+      you an improved ability to empathise with different situations and people.
+    </p>
   </div>
 </template>
 
 <style scoped>
-.hero-wrapper {
+.about-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,14 +27,14 @@
   position: relative;
 }
 
-.hero-wrapper img {
+.about-wrapper img {
   margin: 0 auto;
   height: auto;
   max-width: 100%;
   overflow-x: hidden;
 }
 
-.hero-text {
+.about-text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -40,10 +45,10 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-.hero-text {
+.about-text {
   font-size: 5vw;
 }
-.infoText {
+.visionText {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,13 +57,5 @@
   font-family: 'Montserrat', sans-serif;
   padding-top: 10vh;
   padding-bottom: 5vh;
-}
-.infoText h2 {
-  font-size: 4vw;
-}
-.infoText p {
-  margin-top: 5vh;
-  margin-bottom: 6vh;
-  font-size: 3vw;
 }
 </style>

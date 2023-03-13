@@ -49,6 +49,7 @@
   align-items: center;
   color: #ffffff;
   padding: 2vw;
+  width: 55vw;
   border: 0.7vw solid rgb(255, 255, 255);
   position: absolute;
   top: 50%;
@@ -60,6 +61,6 @@
   font-weight: bold;
   letter-spacing: 0.05em;
   text-shadow: 2px 2px 18px #000000a1;
-  font-family: 'Advent Pro';
+  font-family: 'Montserrat', sans-serif;
 }
 </style>

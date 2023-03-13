@@ -15,8 +15,8 @@ import BooKing from "../components/BooKing.vue"
   </div>
   <div class="productsTwo">
   <div class="productsTwo-text"><h2>Bring your friends and family</h2></div>
-    <div class="overlay"></div>
-    <img src="../assets/media/glade-optics-ttGLlNElbCc-unsplash.jpg" alt="Product Image 1">
+    <!-- <div class="overlay"></div>
+    <img src="../assets/media/glade-optics-ttGLlNElbCc-unsplash.jpg" alt="Product Image 1"> -->
   </div>
   <BooKing />
 </template>
@@ -28,7 +28,7 @@ import BooKing from "../components/BooKing.vue"
   position: relative;
   padding-top: 5vh;
   font-size: 6vw;
-  font-family: 'Advent Pro';
+  font-family: 'Montserrat';
   text-shadow: 1px 1px 2px #000000a1;
 }
 .products {
@@ -75,6 +75,11 @@ import BooKing from "../components/BooKing.vue"
   height: 90vh;
   margin-bottom: 10vh;
   position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/media/glade-optics-ttGLlNElbCc-unsplash.jpg);
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .productsTwo-text {
   display: flex;
@@ -106,14 +111,14 @@ import BooKing from "../components/BooKing.vue"
   height: 100%;
   object-fit: cover;
 }
-.overlay {
+/* .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-}
+} */
 .booking {
   display: flex;
   justify-content: center;
@@ -140,18 +145,40 @@ import BooKing from "../components/BooKing.vue"
   }
   .productsTwo {
     width: 100%;
+    height: 35vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
   }
-  .productsTwo img {
+  .productsTwo-text{
+    width: 48vw;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 29%;
+    border-width: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-right: 0;
+  }
+  .productsTwo-text h2 {
+    font-size: 18px;
+  }
+  /* .productsTwo img {
     margin: 0 auto;
     height: auto;
     max-width: 100%;
     overflow-x: hidden;
   }
+  .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 32.8%;
+    height: 31vh;
+  } */
 
 }
 </style>
