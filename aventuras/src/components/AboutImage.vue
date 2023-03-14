@@ -10,6 +10,7 @@
   </div>
   <div class="visionText">
     <h2>OUR VISION</h2>
+    <div class="vision-underline"></div>
     <p>
       To create a world, where everyone is encouraged to travel. We believe that travelling broadens
       the mind and changes the way you think. The people you meet and the experiences you have give
@@ -48,6 +49,15 @@
 .about-text {
   font-size: 5vw;
 }
+.vision-underline {
+  display: flex;
+  border-bottom: #2a5024 3px solid;
+  width: 10%;
+  margin-left: 0%;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 5vh;
+}
 .visionText {
   display: flex;
   justify-content: center;
@@ -56,6 +66,14 @@
   color: black;
   font-family: 'Montserrat', sans-serif;
   padding-top: 10vh;
-  padding-bottom: 5vh;
+  padding-bottom: 20vh;
+  padding: 10vh;
+  text-align: center;
+}
+
+p {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60vw;
 }
 </style>
