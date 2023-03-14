@@ -1,7 +1,9 @@
 <script setup>
-import About from '../components/AboutImage.vue'
+import AboutImage from '../components/AboutImage.vue'
+import AboutContact from '../components/AboutContact.vue'
 </script>
 
 <template>
-  <About />
+  <AboutImage />
+  <AboutContact />
 </template>
