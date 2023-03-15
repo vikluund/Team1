@@ -29,18 +29,18 @@
   overflow-x: hidden;
 }
 
-.hero-text {
+.hero-text  {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   border: 0.3vw solid white;
-  padding: 20px;
+  padding: 2vw;
   font-family: 'Montserrat', sans-serif;
 }
 
-.hero-text {
+.hero-text h1 {
   font-size: 5vw;
 }
 .infoText {
