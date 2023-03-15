@@ -18,7 +18,7 @@
 
       <!--First Row-->
       <div class="form-group">
-        <label for="first"></label>
+
         <input
           type="text"
           v-model="firstName"
@@ -27,8 +27,9 @@
           placeholder="First name"
         />
       </div>
+      <br />
       <div class="form-group">
-        <label for="last"></label>
+
         <input
           type="text"
           v-model="lastName"
@@ -37,9 +38,8 @@
           placeholder="Last name"
         />
       </div>
-
+      <br />
       <div class="form-group">
-        <label for="email"></label>
         <input type="email" class="form-control" id="email" placeholder="E-mail" v-model="email" />
       </div>
 
