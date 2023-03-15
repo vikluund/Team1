@@ -30,7 +30,6 @@
               Enjoy riding the Icelandic horse in private through stunning nature. Choose from
               unique adventures through the highlands on the oldest trails in Iceland or experience
               the magic on the long stretches of silky smooth black and white beaches, where you can
-
               experience the tölt, which is a gait unique to the Icelandic horse.⁣⁣
             </p>
 
@@ -63,7 +62,6 @@
               Bay. Start your adventure exploring this amazing underwater universe, with its
               colourful coral gardens and its abundant marine life. Let us take you on a tour of a
               lifetime for a chance to swim with the biggest fish in the sea, the majestic Whale
-
               Sharks.
             </p>
             <router-link
@@ -121,7 +119,6 @@
               All your imagination about Bali doesn’t have to be stuck to the beach, because
               adventure awaits you in this paradise. Bali Rafting or also known as White water
               rafting bali is one of the most favorite activities that must be on your booked-list
-
               during your vacation in Bali.
             </p>
             <router-link
@@ -150,7 +147,6 @@
               An alpine skiing tour means making a worthwhile effort to achieve some good skiing. It
               also means magnificent views, powder snow and unspoiled terrain: a perfect combination
               of peace, quiet and action. Your guide chooses a suitable “”mountain of the day””
-
               based on prevailing weather and snow conditions.
             </p>
             <router-link
@@ -196,7 +192,6 @@
     margin: 0 30px;
   }
 }
-
 
 .logo-container {
   display: flex;
@@ -262,7 +257,6 @@
   padding: 3vw;
 }
 
-
 /* .underline1 {
 
 .underline {
@@ -299,14 +293,11 @@
 }
 .btn {
   border-radius: 3px;
-  border-radius: 0;
   background-color: #2a5024;
   border: none;
   color: white;
   padding: 0.5rem;
   margin-top: 1rem;
-  /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: white;
   color: #2a5024;
   font-weight: 500;
@@ -366,5 +357,3 @@ export default {
   }
 }
 </script>
-
-
