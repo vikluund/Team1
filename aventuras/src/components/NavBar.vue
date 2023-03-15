@@ -1,4 +1,7 @@
-<script setup></script>
+<script setup>
+import LoginArea from '../components/LoginArea.vue'
+import LoginAreaMobile from '../components/LoginAreaMobile.vue'
+</script>
 
 <template>
   <nav class="navbar bg-body-tertiary fixed-top">
@@ -90,7 +93,7 @@
           </div>
           <div class="col">
             <span class="nav-item">
-              <RouterLink class="nav-link" aria-current="page" to="/about">LOGIN</RouterLink>
+              <LoginArea />
             </span>
           </div>
         </div>
@@ -128,6 +131,9 @@
             </li>
             <li class="nav-item">
               <RouterLink class="nav-link" aria-current="page" to="/about">About</RouterLink>
+            </li>
+            <li class="nav-item">
+              <LoginAreaMobile />
             </li>
           </ul>
         </div>
