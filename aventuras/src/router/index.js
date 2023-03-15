@@ -30,7 +30,7 @@ const router = createRouter({
     //     component: ProductView
     // }
     {
-      path: '/username',
+      path: '/profile/:username',
       name: 'User',
       component: () => import('../views/MemberView.vue')
     },
