@@ -158,14 +158,14 @@ a {
   align-items: center;
 }
 .main-raised {
-  margin: -5rem 4rem 8rem;
+  margin: -5rem 5vw 5vh;
   border-radius: 3px;
   box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.1), 0 6px 30px 5px rgba(0, 0, 0, 0.08),
     0 8px 10px -5px rgba(0, 0, 0, 0.07);
 }
 
 .profile-content {
-  padding: 1rem 2rem 6rem;
+  padding: 1vh 2vw 8vh;
 }
 
 .main {
@@ -265,6 +265,8 @@ a {
   margin-bottom: 4rem;
 }
 
+/* ---- Media query ---- */
+
 @media (min-width: 768px) {
   .img-raised {
     margin-top: -5rem;
@@ -272,10 +274,11 @@ a {
   }
 
   .main-raised {
-    margin: -5rem 10vw 14vh;
-    border-radius: 3px;
-    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.1), 0 6px 30px 5px rgba(0, 0, 0, 0.08),
-      0 8px 10px -5px rgba(0, 0, 0, 0.07);
+    margin: -5rem 10vw 16vh;
+  }
+
+  .profile-content {
+    padding: 1rem 2rem 6rem;
   }
 }
 </style>
