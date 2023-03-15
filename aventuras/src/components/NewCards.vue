@@ -1,8 +1,17 @@
 <template>
   <div id="card-container">
     <div class="title-section">
-      <h2 class="top-title">OUR ACTIVITIES</h2>
-      <div class="underline"></div>
+      <!-- <h2 class="top-title">OUR ACTIVITIES</h2> -->
+      <div class="logo-container">
+        <img
+          src="../assets/media/mountains-icon.png"
+          alt="mountains-logo"
+          class="logo"
+          style="width: 6vw; height: auto"
+        />
+        <!-- <div class="underline1"></div>
+        <div class="underline2"></div> -->
+      </div>
     </div>
     <!-- Right side picture card -->
     <div class="card mb-4 border-0" style="max-width: 100%">
@@ -21,12 +30,17 @@
               Enjoy riding the Icelandic horse in private through stunning nature. Choose from
               unique adventures through the highlands on the oldest trails in Iceland or experience
               the magic on the long stretches of silky smooth black and white beaches, where you can
-              experience the tölt, which is a gait unique to the Icelandic horse
+
+              experience the tölt, which is a gait unique to the Icelandic horse.⁣⁣
             </p>
 
             <!-- <button type="button" style="float: right" class="btn"> -->
-            <router-link to="/product" class="btn" style="float: right"
-              >More information</router-link
+            <router-link
+              :to="'/product/' + 1"
+              class="btn"
+              @click="toProduct(1)"
+              style="float: right"
+              >More info</router-link
             >
           </div>
         </div>
@@ -49,9 +63,16 @@
               Bay. Start your adventure exploring this amazing underwater universe, with its
               colourful coral gardens and its abundant marine life. Let us take you on a tour of a
               lifetime for a chance to swim with the biggest fish in the sea, the majestic Whale
-              Sharks
+
+              Sharks.
             </p>
-            <router-link to="/about" class="btn">More information</router-link>
+            <router-link
+              :to="'/product/' + 2"
+              class="btn"
+              @click="toProduct(2)"
+              style="float: right"
+              >More info</router-link
+            >
             <!-- </div> -->
           </div>
         </div>
@@ -74,7 +95,13 @@
               with the ground beneath your feet on an effortless walk, a hiking adventure is a
               much-needed release from the rollercoaster of life. Chase the clouds above the cliffs!
             </p>
-            <router-link to="/about" class="btn" style="float: right">More information</router-link>
+            <router-link
+              :to="'/product/' + 3"
+              class="btn"
+              @click="toProduct(3)"
+              style="float: right"
+              >More info</router-link
+            >
           </div>
         </div>
       </div>
@@ -94,9 +121,16 @@
               All your imagination about Bali doesn’t have to be stuck to the beach, because
               adventure awaits you in this paradise. Bali Rafting or also known as White water
               rafting bali is one of the most favorite activities that must be on your booked-list
-              during your vacation in Bali
+
+              during your vacation in Bali.
             </p>
-            <router-link to="/about" class="btn">More information</router-link>
+            <router-link
+              :to="'/product/' + 4"
+              class="btn"
+              @click="toProduct(4)"
+              style="float: right"
+              >More info</router-link
+            >
           </div>
         </div>
       </div>
@@ -116,9 +150,16 @@
               An alpine skiing tour means making a worthwhile effort to achieve some good skiing. It
               also means magnificent views, powder snow and unspoiled terrain: a perfect combination
               of peace, quiet and action. Your guide chooses a suitable “”mountain of the day””
-              based on prevailing weather and snow conditions
+
+              based on prevailing weather and snow conditions.
             </p>
-            <router-link to="/about" class="btn" style="float: right">More information</router-link>
+            <router-link
+              :to="'/product/' + 5"
+              class="btn"
+              @click="toProduct(5)"
+              style="float: right"
+              >More info</router-link
+            >
           </div>
         </div>
       </div>
@@ -128,6 +169,9 @@
 
 <style scoped>
 @media (min-width: 390px) {
+  .btn {
+    margin-bottom: 30px;
+  }
   .card-title {
     height: 3rem;
   }
@@ -153,6 +197,51 @@
   }
 }
 
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6rem;
+}
+
+.logo-container img {
+  display: inline-block;
+}
+
+/* .logo-container .underline1 {
+  display: inline-block;
+  width: 50px;
+  height: 2px;
+  background-color: black;
+  margin: 0 10px;
+  width: 92px;
+  height: 0px;
+  left: 483px;
+  top: 2436px;
+  border: 4px solid #2a5023;
+  margin-right: 10rem;
+} */
+
+/* .logo-container .underline2 {
+  display: inline-block;
+  width: 50px;
+  height: 2px;
+  background-color: black;
+  margin: 0 10px;
+  width: 92px;
+  height: 0px;
+  left: 836px;
+  top: 2436px;
+  border: 4px solid #2a5023;
+} */
+.mountains-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
 #card-container > div:nth-child(2) > div > div:nth-child(2) > div {
   padding: 3vw;
 }
@@ -173,14 +262,31 @@
   padding: 3vw;
 }
 
+
+/* .underline1 {
+
 .underline {
+
   display: flex;
   border-bottom: #2a5024 3px solid;
   width: 10%;
   margin-left: 45%;
+  margin-top: -20vh;
+  margin-left: 30vw;
   display: inline-block;
   position: relative;
 }
+
+.underline2 {
+  display: flex;
+  border-bottom: #2a5024 3px solid;
+  width: 10%;
+  margin-left: 45%;
+  margin-top: -20vh;
+  margin-left: 30vw;
+  display: inline-block;
+  position: relative;
+} */
 
 .title-section {
   margin: 3rem 0;
@@ -192,12 +298,14 @@
   font-family: 'Montserrat', sans-serif;
 }
 .btn {
+  border-radius: 3px;
   border-radius: 0;
   background-color: #2a5024;
   border: none;
   color: white;
   padding: 0.5rem;
   margin-top: 1rem;
+  /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: white;
   color: #2a5024;
@@ -243,9 +351,20 @@
 }
 
 #card-container {
+  margin-top: 18vh;
   margin-top: 20vh;
   /* margin-bottom: 10vh; */
 }
 </style>
 
-<script></script>
+<script>
+export default {
+  methods: {
+    toProduct(id) {
+      this.$router.push({ name: 'product', params: { id: id } })
+    }
+  }
+}
+</script>
+
+
