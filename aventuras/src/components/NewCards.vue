@@ -1,7 +1,6 @@
 <template>
   <div id="card-container">
     <div class="title-section">
-      <!-- <h2 class="top-title">OUR ACTIVITIES</h2> -->
       <div class="logo-container">
         <img
           src="../assets/media/mountains-icon.png"
@@ -366,5 +365,3 @@ export default {
   }
 }
 </script>
-
-
