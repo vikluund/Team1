@@ -2,14 +2,7 @@
   <div id="card-container">
     <div class="title-section">
       <div class="logo-container">
-        <img
-          src="../assets/media/mountains-icon.png"
-          alt="mountains-logo"
-          class="logo"
-          style="width: 6vw; height: auto"
-        />
-        <!-- <div class="underline1"></div>
-        <div class="underline2"></div> -->
+        <img src="../assets/media/mountains-icon.png" alt="mountains-logo" class="logo" />
       </div>
     </div>
     <!-- Right side picture card -->
@@ -163,35 +156,7 @@
 </template>
 
 <style scoped>
-@media (min-width: 390px) {
-  .btn {
-    margin-bottom: 30px;
-  }
-  .card-title {
-    height: 3rem;
-  }
-
-  #card-container > div:nth-child(2) > div > div:nth-child(2) > div {
-    margin: 0 30px;
-  }
-
-  #card-container > div:nth-child(3) > div > div:nth-child(2) > div {
-    margin: 0 30px;
-  }
-
-  #card-container > div:nth-child(4) > div > div:nth-child(2) > div {
-    margin: 0 30px;
-  }
-
-  #card-container > div:nth-child(5) > div > div:nth-child(2) > div {
-    margin: 0 30px;
-  }
-
-  #card-container > div:nth-child(6) > div > div:nth-child(2) > div {
-    margin: 0 30px;
-  }
-}
-
+/* Mobile mode */
 .logo-container {
   display: flex;
   align-items: center;
@@ -203,37 +168,13 @@
   display: inline-block;
 }
 
-/* .logo-container .underline1 {
-  display: inline-block;
-  width: 50px;
-  height: 2px;
-  background-color: black;
-  margin: 0 10px;
-  width: 92px;
-  height: 0px;
-  left: 483px;
-  top: 2436px;
-  border: 4px solid #2a5023;
-  margin-right: 10rem;
-} */
-
-/* .logo-container .underline2 {
-  display: inline-block;
-  width: 50px;
-  height: 2px;
-  background-color: black;
-  margin: 0 10px;
-  width: 92px;
-  height: 0px;
-  left: 836px;
-  top: 2436px;
-  border: 4px solid #2a5023;
-} */
-.mountains-logo {
+.logo {
+  padding-top: 5rem;
+}
+.logo-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 8rem;
 }
 
 #card-container > div:nth-child(2) > div > div:nth-child(2) > div {
@@ -255,31 +196,6 @@
 #card-container > div:nth-child(6) > div > div:nth-child(2) > div {
   padding: 3vw;
 }
-
-/* .underline1 {
-
-.underline {
-
-  display: flex;
-  border-bottom: #2a5024 3px solid;
-  width: 10%;
-  margin-left: 45%;
-  margin-top: -20vh;
-  margin-left: 30vw;
-  display: inline-block;
-  position: relative;
-}
-
-.underline2 {
-  display: flex;
-  border-bottom: #2a5024 3px solid;
-  width: 10%;
-  margin-left: 45%;
-  margin-top: -20vh;
-  margin-left: 30vw;
-  display: inline-block;
-  position: relative;
-} */
 
 .title-section {
   margin: 3rem 0;
@@ -342,8 +258,54 @@
 
 #card-container {
   margin-top: 18vh;
-  margin-top: 20vh;
+  /* margin-top: 20vh; */
+  margin-top: -6vh;
   /* margin-bottom: 10vh; */
+}
+
+.logo {
+  width: 6rem;
+  height: auto;
+}
+
+.btn {
+  margin-bottom: 2rem;
+}
+
+/* Desktop mode */
+@media (min-width: 768px) {
+  .btn {
+    margin-bottom: 0;
+  }
+
+  .logo {
+    width: 10rem;
+    height: auto;
+  }
+
+  .card-title {
+    height: 3rem;
+  }
+
+  #card-container > div:nth-child(2) > div > div:nth-child(2) > div {
+    margin: 0 30px;
+  }
+
+  #card-container > div:nth-child(3) > div > div:nth-child(2) > div {
+    margin: 0 30px;
+  }
+
+  #card-container > div:nth-child(4) > div > div:nth-child(2) > div {
+    margin: 0 30px;
+  }
+
+  #card-container > div:nth-child(5) > div > div:nth-child(2) > div {
+    margin: 0 30px;
+  }
+
+  #card-container > div:nth-child(6) > div > div:nth-child(2) > div {
+    margin: 0 30px;
+  }
 }
 </style>
 
