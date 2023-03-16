@@ -62,7 +62,7 @@ export default {
           this.input.password == this.loginStore.member.password
         ) {
           this.loginStore.login()
-          this.$router.replace({ path: '/profile/' + this.loginStore.member.username })
+          this.$router.replace({ path: '/' + this.loginStore.member.username })
         } else {
           this.message = 'The username and/or password is incorrect'
         }

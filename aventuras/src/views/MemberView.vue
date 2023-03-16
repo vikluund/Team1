@@ -19,7 +19,7 @@
           </div>
         </div>
         <div class="description text-center">
-          <p>This is a user profile page.</p>
+          <p>{{ loginStore.member.description }}</p>
         </div>
         <div class="row">
           <div class="col">
@@ -43,18 +43,14 @@
           <div class="row">
             <div class="col">
               <div class="card" style="width: 18rem">
-                <img class="card-img-top" src="../assets/media/Horse3.jpg" alt="Card image cap" />
+                <img class="card-img-top" :src="products[0].infoimg" alt="Card image cap" />
                 <div class="card-body">
-                  <h5 class="card-title">HORSE RIDING TOUR</h5>
+                  <h5 class="card-title">{{ products[0].infotitle }}</h5>
                   <p class="card-text">
-                    Enjoy riding the Icelandic horse in private through stunning nature. Choose from
-                    unique adventures through the highlands on the oldest trails in Iceland or
-                    experience the magic on the long stretches of silky smooth black and white
-                    beaches, where you can experience the tölt, which is a gait unique to the
-                    Icelandic horse.
+                    {{ products[0].infotext }}
                   </p>
                 </div>
-                <div class="card-body">
+                <div class="card-body card-bottom">
                   <a href="#" class="card-link">Information</a>
                   <a href="#" class="card-link">Cancel Activity</a>
                 </div>
@@ -63,21 +59,14 @@
             <!-- col2-->
             <div class="col">
               <div class="card" style="width: 18rem">
-                <img
-                  class="card-img-top"
-                  src="../assets/media/HeroImageRaft.jpg"
-                  alt="Card image cap"
-                />
+                <img class="card-img-top" :src="products[3].infoimg" alt="Card image cap" />
                 <div class="card-body">
-                  <h5 class="card-title">BALI RAFTING</h5>
+                  <h5 class="card-title">{{ products[3].infotitle }}</h5>
                   <p class="card-text">
-                    All your imagination about Bali doesn't have to be stuck to the beach, because
-                    adventure awaits you in this paradise. Bali Rafting or also known as White water
-                    rafting bali is one of the most favorite activities that must be on your
-                    booked-list during your vacation in Bali.
+                    {{ products[3].infotext }}
                   </p>
                 </div>
-                <div class="card-body">
+                <div class="card-body card-bottom">
                   <a href="#" class="card-link">Information</a>
                   <a href="#" class="card-link">Cancel Activity</a>
                 </div>
@@ -92,6 +81,7 @@
 
 <script>
 import { useAuthStore } from '../stores/login.js'
+import Product from '../product.json'
 
 export default {
   setup() {
@@ -99,6 +89,12 @@ export default {
 
     return { loginStore }
   },
+  data() {
+    return {
+      products: Product
+    }
+  },
+
   //if not logged in, redirect to login-page
   mounted() {
     if (!this.loginStore.member.auth) {
@@ -173,6 +169,12 @@ a {
   position: relative;
   z-index: 3;
 }
+
+.card-img-top {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+}
 .card-text {
   margin-top: 1rem;
   font-size: 0.9rem;
@@ -182,6 +184,12 @@ a {
 
 .card-title {
   font-weight: 600;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
 }
 
 .profile-page .profile {

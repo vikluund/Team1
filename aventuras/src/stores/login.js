@@ -6,6 +6,7 @@ export const useAuthStore = defineStore('login', {
       username: 'Alice',
       password: '123',
       location: 'Stockholm, Sweden',
+      description: 'This is a user profile page.',
       auth: false
     }
   }),

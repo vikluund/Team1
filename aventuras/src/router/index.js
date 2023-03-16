@@ -28,10 +28,10 @@ const router = createRouter({
     {
       path: '/product',
       name: 'Product',
-      component: () => import("@/views/ProductView.vue")
+      component: () => import('@/views/ProductView.vue')
     },
     {
-      path: '/profile/:username',
+      path: '/:username',
       name: 'User',
       component: () => import('../views/MemberView.vue')
     },
@@ -42,7 +42,7 @@ const router = createRouter({
     }
   ],
   scrollBehavior() {
-    return { top: 0};
+    return { top: 0 }
   }
 })
 
