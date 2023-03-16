@@ -1,0 +1,61 @@
+[
+    {
+      "id": "1",
+      "heroimg": "../src/assets/media/HeroHorse2.jpg",
+      "herotext": "HORSE RIDING TOUR",
+      "title":"Go With the Flow",
+      "infotitle":"About Horse Riding Tour",
+      "infotext":"This tour is for everyone but participants should be in good physical condition and must be able to mount a horse with little assistance. We ride through different terrain, including water in the river-delta, and cover long distances in “tölt” (comfortable gait of the Icelandic horse, about trot speed). The minimum age for children is 10 years, children 14 years and younger are required to have riding skills (riding regularly for at least one  year).  ",
+      "infoimg":"../src/assets/media/Horse4.jpg",
+      "heroimg2": "../src/assets/media/Horse3.jpg",
+      "herotext2": "Equestrian"
+    },
+
+    {
+        "id": "2",
+        "heroimg": "../src/assets/media/Snork2.jpg",
+      "herotext": "SAFARI SHARK WHALE",
+      "title":"Breathtaking experience & Swim with the Shark",
+      "infotitle":"Swimming with the Whale Shark",
+      "infotext":" We will do our best to allow you to experience as much wildlife as possible during our tour. Once our spotter plane has found a whale shark, our boat will make its way there. Guests will be split into 2 groups of 10 and take turns to swim with the whale shark. To ensure that we don’t disturb its natural habits, we are allowed a maximum one hour of swimming time with the whale shark. ",
+      "infoimg":"../src/assets/media/Snork1.jpg",
+      "heroimg2": "Gentle Giants",
+      "herotext2": "../src/assets/media/Snork2.jpg"
+    },
+
+    {
+      "id": "3",
+      "heroimg": "../src/assets/media/climb1.jpg",
+      "herotext": "HIKE AND MOUNTAIN CLIMB",
+      "title":"Heading for the Mountains...",
+      "infotitle":"A Hiking We Will Go",
+      "infotext":"There really is no better way to start that working holiday experience than on one of our amazing hiking group tours in Nepal. The team will get you fully settled in to work abroad down-under. Share the adventure with people just like you.. Looking for the best possible travelling experience in Nepal.",
+      "infoimg":"../src/assets/media/Hike5.png",
+      "heroimg2": "../src/assets/media/climb3.png",
+      "herotext2": "Climb Every Mountain"
+    },
+
+    {
+      "id": "4",
+      "heroimg": "../src/assets/media/HeroImageRaft.jpg",
+      "herotext": "BALI RAFTING",
+      "title":"Let the water run wild",
+      "infotitle":"Telaga Waja Rafting",
+      "infotext":"Telaga waja rafting offers challenging adventure tours with medium level rapids (Level II - IV), and you will get the sensation of plunging in a 4 meter high drops dam. Enjoy the beautiful scenery along the rafting trail, such as: nice rocks, clean water, flows along the expanse of green fields, hills, valleys, cliffs and waterfalls.",
+      "infoimg":"../src/assets/media/Raft2.jpg",
+      "heroimg2": "../src/assets/media/4.jpg",
+      "herotext2": "Feel the adventure during rafting"
+    },
+
+    {
+      "id": "5",
+      "heroimg": "../src/assets/media/Ski1.jpg",
+      "herotext": "ALPINE SKIING TOUR",
+      "title":"Ski mountaineering",
+      "infotitle":"Ski touring",
+      "infotext":"On the way up, using climbing skins under our skis and pacing ourselves comfortably, we enjoy the quiet mountains. At the top we take off our climbing skins and enjoy the reward for our efforts – skiing down slopes with a euphoric kick of adrenaline.The area offers a multitude of classic peaks such as Vassitjåkka, Låktatjåkka, Kopparfjell and Kaisepakte that have routes suitable for beginners.  ",
+      "infoimg":"../src/assets/media/Ski2.png",
+      "heroimg2": "../src/assets/media/Ski3.jpg",
+      "herotext2": "Downhill Skiing"
+    }
+  ]
