@@ -21,7 +21,6 @@ import LoginAreaMobile from '../components/LoginAreaMobile.vue'
                 data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasTop"
                 aria-controls="offcanvasTop"
-
               >
                 SEASON
               </button>
@@ -83,7 +82,7 @@ import LoginAreaMobile from '../components/LoginAreaMobile.vue'
           </div>
           <div class="col">
             <RouterLink class="navbar-brand" to="/"
-              ><img src="../assets/media/AventurasLogoNY.png" class="img-fluid" alt="Logo" />
+              ><img src="../assets/media/AventurasLogo2nd.png" class="img-fluid" alt="Logo" />
             </RouterLink>
           </div>
           <div class="col">
@@ -100,7 +99,7 @@ import LoginAreaMobile from '../components/LoginAreaMobile.vue'
       </div>
       <div class="navbar-logo d-block d-md-none">
         <RouterLink class="navbar-brand" to="/"
-          ><img src="../assets/media/AventurasLogo.png" class="img-fluid" alt="Logo" />
+          ><img src="../assets/media/AventurasLogo2nd.png" class="img-fluid" alt="Logo" />
         </RouterLink>
       </div>
       <button
@@ -141,7 +140,6 @@ import LoginAreaMobile from '../components/LoginAreaMobile.vue'
     </div>
   </nav>
 </template>
-
 
 <style scoped>
 @media (max-width: 967px) {
@@ -201,7 +199,7 @@ import LoginAreaMobile from '../components/LoginAreaMobile.vue'
 }
 .btn-primary {
   background-color: transparent;
-  border: transparent ;
+  border: transparent;
   border-color: transparent;
   border: none;
   font-family: 'Montserrat', sans-serif;
@@ -210,9 +208,10 @@ import LoginAreaMobile from '../components/LoginAreaMobile.vue'
   padding: 9px 0 0;
 }
 
-.btn-primary.focus, .btn-primary:focus {
-    box-shadow: none;
-    border: transparent;
+.btn-primary.focus,
+.btn-primary:focus {
+  box-shadow: none;
+  border: transparent;
 }
 .offcanvas-end {
   width: 60%;
