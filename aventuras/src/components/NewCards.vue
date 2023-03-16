@@ -2,14 +2,7 @@
   <div id="card-container">
     <div class="title-section">
       <div class="logo-container">
-        <img
-          src="../assets/media/mountains-icon.png"
-          alt="mountains-logo"
-          class="logo"
-          style="width: 6vw; height: auto"
-        />
-        <!-- <div class="underline1"></div>
-        <div class="underline2"></div> -->
+        <img src="../assets/media/mountains-icon.png" alt="mountains-logo" class="logo" />
       </div>
     </div>
     <!-- Right side picture card -->
@@ -29,7 +22,6 @@
               Enjoy riding the Icelandic horse in private through stunning nature. Choose from
               unique adventures through the highlands on the oldest trails in Iceland or experience
               the magic on the long stretches of silky smooth black and white beaches, where you can
-
               experience the tölt, which is a gait unique to the Icelandic horse.⁣⁣
             </p>
 
@@ -62,7 +54,6 @@
               Bay. Start your adventure exploring this amazing underwater universe, with its
               colourful coral gardens and its abundant marine life. Let us take you on a tour of a
               lifetime for a chance to swim with the biggest fish in the sea, the majestic Whale
-
               Sharks.
             </p>
             <router-link
@@ -120,7 +111,6 @@
               All your imagination about Bali doesn’t have to be stuck to the beach, because
               adventure awaits you in this paradise. Bali Rafting or also known as White water
               rafting bali is one of the most favorite activities that must be on your booked-list
-
               during your vacation in Bali.
             </p>
             <router-link
@@ -149,7 +139,6 @@
               An alpine skiing tour means making a worthwhile effort to achieve some good skiing. It
               also means magnificent views, powder snow and unspoiled terrain: a perfect combination
               of peace, quiet and action. Your guide chooses a suitable “”mountain of the day””
-
               based on prevailing weather and snow conditions.
             </p>
             <router-link
@@ -167,36 +156,7 @@
 </template>
 
 <style scoped>
-@media (min-width: 390px) {
-  .btn {
-    margin-bottom: 30px;
-  }
-  .card-title {
-    height: 3rem;
-  }
-
-  #card-container > div:nth-child(2) > div > div:nth-child(2) > div {
-    margin: 0 30px;
-  }
-
-  #card-container > div:nth-child(3) > div > div:nth-child(2) > div {
-    margin: 0 30px;
-  }
-
-  #card-container > div:nth-child(4) > div > div:nth-child(2) > div {
-    margin: 0 30px;
-  }
-
-  #card-container > div:nth-child(5) > div > div:nth-child(2) > div {
-    margin: 0 30px;
-  }
-
-  #card-container > div:nth-child(6) > div > div:nth-child(2) > div {
-    margin: 0 30px;
-  }
-}
-
-
+/* Mobile mode */
 .logo-container {
   display: flex;
   align-items: center;
@@ -208,37 +168,13 @@
   display: inline-block;
 }
 
-/* .logo-container .underline1 {
-  display: inline-block;
-  width: 50px;
-  height: 2px;
-  background-color: black;
-  margin: 0 10px;
-  width: 92px;
-  height: 0px;
-  left: 483px;
-  top: 2436px;
-  border: 4px solid #2a5023;
-  margin-right: 10rem;
-} */
-
-/* .logo-container .underline2 {
-  display: inline-block;
-  width: 50px;
-  height: 2px;
-  background-color: black;
-  margin: 0 10px;
-  width: 92px;
-  height: 0px;
-  left: 836px;
-  top: 2436px;
-  border: 4px solid #2a5023;
-} */
-.mountains-logo {
+.logo {
+  padding-top: 5rem;
+}
+.logo-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 8rem;
 }
 
 #card-container > div:nth-child(2) > div > div:nth-child(2) > div {
@@ -261,32 +197,6 @@
   padding: 3vw;
 }
 
-
-/* .underline1 {
-
-.underline {
-
-  display: flex;
-  border-bottom: #2a5024 3px solid;
-  width: 10%;
-  margin-left: 45%;
-  margin-top: -20vh;
-  margin-left: 30vw;
-  display: inline-block;
-  position: relative;
-}
-
-.underline2 {
-  display: flex;
-  border-bottom: #2a5024 3px solid;
-  width: 10%;
-  margin-left: 45%;
-  margin-top: -20vh;
-  margin-left: 30vw;
-  display: inline-block;
-  position: relative;
-} */
-
 .title-section {
   margin: 3rem 0;
 }
@@ -298,14 +208,11 @@
 }
 .btn {
   border-radius: 3px;
-  border-radius: 0;
   background-color: #2a5024;
   border: none;
   color: white;
   padding: 0.5rem;
   margin-top: 1rem;
-  /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: white;
   color: #2a5024;
   font-weight: 500;
@@ -351,8 +258,54 @@
 
 #card-container {
   margin-top: 18vh;
-  margin-top: 20vh;
+  /* margin-top: 20vh; */
+  margin-top: -6vh;
   /* margin-bottom: 10vh; */
+}
+
+.logo {
+  width: 6rem;
+  height: auto;
+}
+
+.btn {
+  margin-bottom: 2rem;
+}
+
+/* Desktop mode */
+@media (min-width: 768px) {
+  .btn {
+    margin-bottom: 0;
+  }
+
+  .logo {
+    width: 10rem;
+    height: auto;
+  }
+
+  .card-title {
+    height: 3rem;
+  }
+
+  #card-container > div:nth-child(2) > div > div:nth-child(2) > div {
+    margin: 0 30px;
+  }
+
+  #card-container > div:nth-child(3) > div > div:nth-child(2) > div {
+    margin: 0 30px;
+  }
+
+  #card-container > div:nth-child(4) > div > div:nth-child(2) > div {
+    margin: 0 30px;
+  }
+
+  #card-container > div:nth-child(5) > div > div:nth-child(2) > div {
+    margin: 0 30px;
+  }
+
+  #card-container > div:nth-child(6) > div > div:nth-child(2) > div {
+    margin: 0 30px;
+  }
 }
 </style>
 
