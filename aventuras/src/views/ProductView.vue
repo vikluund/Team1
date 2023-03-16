@@ -89,7 +89,8 @@ export default {
   align-items: center;
   color: #ffffff;
   padding: 2vw;
-  width: 55vw;
+  width: auto;
+  height: auto;
   border: 0.7vw solid rgb(255, 255, 255);
   position: absolute;
   top: 50%;
@@ -97,17 +98,20 @@ export default {
   transform: translate(-50%, -50%);
 }
 .productHeroText h1 {
-  font-size: 6vw;
+  font-size: 4vw;
   font-weight: bold;
   letter-spacing: 0.05em;
   text-shadow: 2px 2px 18px #000000a1;
   font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding-left: 1vw;
+  padding-right: 1vw;
 }
 .product-title {
   text-align: center;
   position: relative;
   padding-top: 5vh;
-  font-size: 6vw;
+  font-size: 4.5rem;
   font-family: 'Montserrat';
   text-shadow: 1px 1px 2px #000000a1;
 }
@@ -145,7 +149,7 @@ export default {
   font-weight: 500;
 }
 .productText p {
-  font-size: 1vw;
+  font-size: 1.2rem;
 }
 .productsTwo {
   display: flex;
@@ -165,9 +169,10 @@ export default {
   justify-content: center;
   align-items: center;
   color: #ffffff;
-  width: 24vw;
-  padding-left: 10px;
-  padding-right: 10px;
+  width: auto;
+  height: auto;
+  padding-left: 2vw;
+  padding-right: 2vw;
   padding-top: 10px;
   padding-bottom: 10px;
   border: 0.4vw solid rgb(255, 255, 255);
@@ -183,6 +188,7 @@ export default {
   letter-spacing: 0.05em;
   text-shadow: 2px 2px 18px #000000a1;
   font-family: 'Montserrat';
+  text-align: center;
 }
 .productsTwo img {
   width: 100%;
@@ -207,6 +213,9 @@ export default {
   background-color: rgb(57, 57, 57);
 }
 @media (max-width: 768px) {
+  .productHeroText h1 {
+    font-size: 1.4rem;
+  }
   .products {
     padding-left: 0;
     flex-direction: column;
@@ -214,6 +223,9 @@ export default {
   .theImage {
     width: 80%;
     margin: 0;
+  }
+  .product-title {
+    font-size: 2rem;
   }
   .productText h2 {
     font-size: 20px;
@@ -231,18 +243,19 @@ export default {
     position: relative;
   }
   .productsTwo-text {
-    width: 48vw;
+    width: auto;
+    height: auto;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     top: 50%;
-    left: 29%;
+    left: 35%;
     border-width: 4px;
     background-color: rgba(0, 0, 0, 0.5);
-    padding-right: 0;
   }
   .productsTwo-text h2 {
     font-size: 18px;
+    text-align: center;
   }
 }
 </style>
