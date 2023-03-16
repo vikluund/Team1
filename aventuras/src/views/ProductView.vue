@@ -1,55 +1,58 @@
 <script setup>
-import BooKing from "../components/BooKing.vue"
+import BooKing from '../components/BooKing.vue'
 </script>
 
 <template>
   <div v-for="product in getData($route.params.id)" :key="product.id" class="productHero">
     <div class="productHeroWrapper">
-      <img :src="product.heroimg" alt="Hero Image Product">
+      <img :src="product.heroimg" alt="Hero Image Product" />
       <div class="productHeroText">
-        <h1>{{ product.herotext}}</h1>
+        <h1>{{ product.herotext }}</h1>
       </div>
     </div>
   </div>
-  <h1 v-for="product in getData($route.params.id)" :key="product.id" class="product-title"> {{ product.title }}</h1>
+  <h1 v-for="product in getData($route.params.id)" :key="product.id" class="product-title">
+    {{ product.title }}
+  </h1>
   <div v-for="product in getData($route.params.id)" :key="product.id" class="products">
     <div class="productText">
-    <h2> {{ product.infotitle }}</h2>
-    <p>{{ product.infotext }}</p>
+      <h2>{{ product.infotitle }}</h2>
+      <p>{{ product.infotext }}</p>
     </div>
-    <img :src="product.infoimg" alt="Product Image 1" class="theImage">
+    <img :src="product.infoimg" alt="Product Image 1" class="theImage" />
   </div>
   <div v-for="product in getData($route.params.id)" :key="product.id" class="productsTwo">
-  <div class="productsTwo-text"><h2>{{ product.herotext2 }}</h2></div>
-    <!-- <div class="overlay"></div>
-    <img src="../assets/media/glade-optics-ttGLlNElbCc-unsplash.jpg" alt="Product Image 1"> -->
+    <div class="productsTwo-text">
+      <h2>{{ product.herotext2 }}</h2>
+    </div>
+    <div class="overlay"></div>
+    <img :src="product.heroimg2" alt="Product Image 1" />
   </div>
   <BooKing />
 </template>
 
 <script>
-  import Product from '../Product.json'
+import Product from '../product.json'
 
-  export default {
-    data() {
-      return {
-        products: Product
-      }
-    },
-    methods: {
-      getData(id) {
-        let data = this.products
-        return data.filter(item=> {
-          return item.id == id
-        })
-      }
+export default {
+  data() {
+    return {
+      products: Product
+    }
+  },
+  methods: {
+    getData(id) {
+      let data = this.products
+      return data.filter((item) => {
+        return item.id == id
+      })
     }
   }
+}
 </script>
 
 <style scoped>
-
-.productHero{
+.productHero {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -71,7 +74,7 @@ import BooKing from "../components/BooKing.vue"
   overflow-x: hidden;
 }
 .productHeroWrapper::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -100,7 +103,7 @@ import BooKing from "../components/BooKing.vue"
   text-shadow: 2px 2px 18px #000000a1;
   font-family: 'Montserrat', sans-serif;
 }
-.product-title{
+.product-title {
   text-align: center;
   position: relative;
   padding-top: 5vh;
@@ -152,9 +155,7 @@ import BooKing from "../components/BooKing.vue"
   height: 90vh;
   margin-bottom: 10vh;
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../assets/media/glade-optics-ttGLlNElbCc-unsplash.jpg);
-    background-position: center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -188,14 +189,14 @@ import BooKing from "../components/BooKing.vue"
   height: 100%;
   object-fit: cover;
 }
-/* .overlay {
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-} */
+}
 .booking {
   display: flex;
   justify-content: center;
@@ -205,7 +206,7 @@ import BooKing from "../components/BooKing.vue"
   width: 80vw;
   background-color: rgb(57, 57, 57);
 }
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .products {
     padding-left: 0;
     flex-direction: column;
@@ -214,7 +215,7 @@ import BooKing from "../components/BooKing.vue"
     width: 80%;
     margin: 0;
   }
-  .productText h2{
+  .productText h2 {
     font-size: 20px;
   }
   .productText p {
@@ -229,7 +230,7 @@ import BooKing from "../components/BooKing.vue"
     align-items: center;
     position: relative;
   }
-  .productsTwo-text{
+  .productsTwo-text {
     width: 48vw;
     flex-direction: row;
     justify-content: center;
@@ -243,19 +244,5 @@ import BooKing from "../components/BooKing.vue"
   .productsTwo-text h2 {
     font-size: 18px;
   }
-  /* .productsTwo img {
-    margin: 0 auto;
-    height: auto;
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-  .overlay {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 32.8%;
-    height: 31vh;
-  } */
-
 }
 </style>
