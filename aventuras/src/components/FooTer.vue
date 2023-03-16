@@ -78,7 +78,7 @@ export default {
 
   methods: {
     onSubmit(event) {
-      this.message = `Thanks for subscribing `
+      this.message = `Thank you for subscribing!`
       event.preventDefault()
     }
   }
@@ -87,7 +87,7 @@ export default {
 
 <style scoped>
 #message {
-  color: red;
+  color:#33de15;
   font-weight: 600;
   font-size: 20px;
 }
