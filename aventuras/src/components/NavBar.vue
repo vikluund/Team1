@@ -38,7 +38,7 @@ import LoginAreaMobile from '../components/LoginAreaMobile.vue'
                         <div class="card" style="width: 12rem">
                           <img src="../assets/media/Spring.png" class="card-img-top" alt="..." />
                           <h5 class="card-title">
-                            <RouterLink class="nav-link" aria-current="page" to="/"
+                            <RouterLink class="nav-link" aria-current="page" to="/product"
                               >SPRING</RouterLink
                             >
                           </h5>
@@ -48,7 +48,7 @@ import LoginAreaMobile from '../components/LoginAreaMobile.vue'
                         <div class="card" style="width: 12rem">
                           <img src="../assets/media/Summer.png" class="card-img-top" alt="..." />
                           <h5 class="card-title">
-                            <RouterLink class="nav-link" aria-current="page" to="/"
+                            <RouterLink class="nav-link" aria-current="page" to="/product"
                               >SUMMER</RouterLink
                             >
                           </h5>
@@ -58,7 +58,7 @@ import LoginAreaMobile from '../components/LoginAreaMobile.vue'
                         <div class="card" style="width: 12rem">
                           <img src="../assets/media/Autumn.png" class="card-img-top" alt="..." />
                           <h5 class="card-title">
-                            <RouterLink class="nav-link" aria-current="page" to="/"
+                            <RouterLink class="nav-link" aria-current="page" to="/product"
                               >AUTUMN</RouterLink
                             >
                           </h5>
@@ -68,7 +68,7 @@ import LoginAreaMobile from '../components/LoginAreaMobile.vue'
                         <div class="card" style="width: 12rem">
                           <img src="../assets/media/Winter.png" class="card-img-top" alt="..." />
                           <h5 class="card-title">
-                            <RouterLink class="nav-link" aria-current="page" to="/"
+                            <RouterLink class="nav-link" aria-current="page" to="/product"
                               >WINTER</RouterLink
                             >
                           </h5>
@@ -78,17 +78,16 @@ import LoginAreaMobile from '../components/LoginAreaMobile.vue'
                   </div>
                 </div>
               </div>
-              <RouterLink class="nav-link" aria-current="page" to="/season"></RouterLink>
             </span>
           </div>
           <div class="col">
             <RouterLink class="navbar-brand" to="/"
-              ><img src="../assets/media/AventurasLogo.png" class="img-fluid" alt="Logo" />
+              ><img src="../assets/media/AventurasLogoNY.png" class="img-fluid" alt="Logo" />
             </RouterLink>
           </div>
           <div class="col">
             <span class="nav-item">
-              <RouterLink class="nav-link" aria-current="page" to="/activities">ABOUT</RouterLink>
+              <RouterLink class="nav-link" aria-current="page" to="/about">ABOUT</RouterLink>
             </span>
           </div>
           <div class="col">
@@ -127,7 +126,7 @@ import LoginAreaMobile from '../components/LoginAreaMobile.vue'
               <RouterLink class="nav-link" aria-current="page" to="/">Home</RouterLink>
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" aria-current="page" to="/Season">Season</RouterLink>
+              <RouterLink class="nav-link" aria-current="page" to="/product">Season</RouterLink>
             </li>
             <li class="nav-item">
               <RouterLink class="nav-link" aria-current="page" to="/about">About</RouterLink>
@@ -200,11 +199,18 @@ import LoginAreaMobile from '../components/LoginAreaMobile.vue'
 }
 .btn-primary {
   background-color: transparent;
-  border: transparent;
+  border: transparent ;
+  border-color: transparent;
+  border: none;
   font-family: 'Montserrat', sans-serif;
   font-size: small;
   margin: -20px;
   padding: 9px 0 0;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: none;
+    border: transparent;
 }
 .offcanvas-end {
   width: 60%;
