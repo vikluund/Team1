@@ -161,7 +161,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 6rem;
+  margin-bottom: 9vh;
+  margin-top: 9vh;
 }
 
 .logo-container img {
@@ -169,7 +170,7 @@
 }
 
 .logo {
-  padding-top: 5rem;
+  padding-top: 1.5vh;
 }
 .logo-container {
   display: flex;
@@ -198,12 +199,12 @@
 }
 
 .title-section {
-  margin: 3rem 0;
+  margin: 1.3vh 0;
 }
 
 .top-title {
   text-align: center;
-  height: 3rem;
+  height: 1.4vh;
   font-family: 'Montserrat', sans-serif;
 }
 .btn {
@@ -211,8 +212,10 @@
   background-color: #2a5024;
   border: none;
   color: white;
-  padding: 0.5rem;
-  margin-top: 1rem;
+  padding: 0.8vh;
+  padding-bottom: 1vh;
+  margin-top: 0.5vh;
+  margin-bottom: 0.8vh;
   background-color: white;
   color: #2a5024;
   font-weight: 500;
@@ -256,13 +259,6 @@
   height: 3rem;
 }
 
-#card-container {
-  margin-top: 18vh;
-  /* margin-top: 20vh; */
-  margin-top: -6vh;
-  /* margin-bottom: 10vh; */
-}
-
 .logo {
   width: 6rem;
   height: auto;
@@ -279,8 +275,10 @@
   }
 
   .logo {
-    width: 10rem;
+    width: 10vw;
     height: auto;
+    margin-top: 9vh;
+    margin-bottom: 9vh;
   }
 
   .card-title {
@@ -289,22 +287,32 @@
 
   #card-container > div:nth-child(2) > div > div:nth-child(2) > div {
     margin: 0 30px;
+    padding: 0;
+    padding-top: 5vh;
   }
 
   #card-container > div:nth-child(3) > div > div:nth-child(2) > div {
     margin: 0 30px;
+    padding: 0;
+    padding-top: 5vh;
   }
 
   #card-container > div:nth-child(4) > div > div:nth-child(2) > div {
     margin: 0 30px;
+    padding: 0;
+    padding-top: 5vh;
   }
 
   #card-container > div:nth-child(5) > div > div:nth-child(2) > div {
     margin: 0 30px;
+    padding: 0;
+    padding-top: 5vh;
   }
 
   #card-container > div:nth-child(6) > div > div:nth-child(2) > div {
     margin: 0 30px;
+    padding: 0;
+    padding-top: 5vh;
   }
 }
 </style>
