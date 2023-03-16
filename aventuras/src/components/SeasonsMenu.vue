@@ -19,22 +19,22 @@ export default {
         {
           name: 'Spring',
           class: 'season1',
-          linkPath: '#spring'
+          linkPath: '#first'
         },
         {
           name: 'Summer',
           class: 'season2',
-          linkPath: '#summer'
+          linkPath: '#second'
         },
         {
           name: 'Autumn',
           class: 'season3',
-          linkPath: '#autumn'
+          linkPath: '#third'
         },
         {
           name: 'Winter',
           class: 'season4',
-          linkPath: '#winter'
+          linkPath: '#fourth'
         }
       ]
     }

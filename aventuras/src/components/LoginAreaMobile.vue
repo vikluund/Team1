@@ -6,7 +6,7 @@
     </div>
     <div v-else class="auth-wrapper">
       <div class="user-wrapper">
-        <RouterLink class="nav-link" :to="'/profile/' + this.loginStore.member.username"
+        <RouterLink class="nav-link" :to="'/' + this.loginStore.member.username"
           ><img class="circle-user-img" src="../assets/media/circle-user-icon-small.png" />{{
             loginStore.member.username
           }}
