@@ -62,7 +62,7 @@ export default {
           this.input.password == this.loginStore.member.password
         ) {
           this.loginStore.login()
-          this.$router.replace({ path: '/username' })
+          this.$router.replace({ path: '/profile/' + this.loginStore.member.username })
         } else {
           this.message = 'The username and/or password is incorrect'
         }
@@ -106,7 +106,7 @@ h4 {
   flex-direction: column;
   align-items: center;
   margin: auto;
-  padding: 50px 30px 50px;
+  padding: 40px 30px 40px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
@@ -122,16 +122,16 @@ h4 {
 }
 
 input {
-  width: 12rem;
+  width: auto;
   margin-bottom: 1rem;
   padding: 0.4rem;
   background-color: #eeeeee;
-  border: 1px solid #eeeeee;
+  border: 2px solid #eeeeee;
   border-radius: 2px;
 }
 
 input:focus {
-  border: 1px solid #8a8a8a;
+  border: 2px solid #8a8a8a;
   outline: none;
 }
 
@@ -177,8 +177,8 @@ input:focus {
 }
 
 .login-wrapper {
-  padding-top: 4vh;
-  width: 70vw;
+  padding-top: 1vh;
+  width: 80vw;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -202,6 +202,8 @@ input:focus {
   background-color: #fff;
   margin-bottom: 10px;
 }
+
+/* ---- Media query ---- */
 
 @media (min-width: 768px) {
   .login-wrapper {

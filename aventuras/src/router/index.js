@@ -20,17 +20,18 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
     },
     {
-      path: '/product',
+      path: '/product/:id',
       name: 'product',
       component: ProductView
     },
-    // {
-    //     path: '/product/:id',
-    //     name: 'product',
-    //     component: ProductView
-    // }
+
     {
-      path: '/username',
+      path: '/product',
+      name: 'Product',
+      component: () => import("@/views/ProductView.vue")
+    },
+    {
+      path: '/profile/:username',
       name: 'User',
       component: () => import('../views/MemberView.vue')
     },
@@ -39,7 +40,10 @@ const router = createRouter({
       name: 'Login',
       component: () => import('../views/LoginView.vue')
     }
-  ]
+  ],
+  scrollBehavior() {
+    return { top: 0};
+  }
 })
 
 export default router

@@ -6,7 +6,7 @@
     </div>
     <div v-else class="auth-wrapper">
       <div class="user-wrapper">
-        <RouterLink class="nav-link" to="/username"
+        <RouterLink class="nav-link" :to="'/profile/' + this.loginStore.member.username"
           ><img class="circle-user-img" src="../assets/media/circle-user-icon-small.png" /><span
             id="username-text"
             >{{ loginStore.member.username }}</span
@@ -88,6 +88,7 @@ h4 {
 
 #username-text {
   text-transform: uppercase;
+  margin-right: 8px;
 }
 
 .circle-user-img {
