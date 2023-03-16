@@ -8,14 +8,11 @@
     <!--Card-Body-->
     <div class="card-body">
       <!--Card-Title-->
-      <!-- <p class="card-title text-center shadow mb-5 rounded">Search For Availability</p> -->
-      <p class="title">Search For Availability</p>
+      <p class="title"> RESERVE YOUR SPOT TODAY</p>
       <div class="icons text-center">
-        <i class="fas fa-hiking" style="font-size: 48px; color: #2a5024"></i>
+        <i class="bi bi-calendar-check" style="font-size: 48px; color: #2a5024"></i>
       </div>
-
-      <hr />
-
+<br>
       <!--First Row-->
       <div class="form-group">
 
