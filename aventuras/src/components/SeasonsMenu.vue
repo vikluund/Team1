@@ -1,5 +1,5 @@
 <template>
-  <div class="seasons-wrapper">
+  <div class="seasons-wrapper" id="seasonLink">
     <h2 class="seasons-text">Pick your adventure by season</h2>
     <div class="seasons-container">
       <div :class="season.class" v-for="(season, index) in seasons" :key="index">

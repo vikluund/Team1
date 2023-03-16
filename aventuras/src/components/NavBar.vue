@@ -39,10 +39,9 @@ import LoginAreaMobile from '../components/LoginAreaMobile.vue'
                         <div class="card" style="width: 12rem">
                           <img src="../assets/media/Spring.png" class="card-img-top" alt="..." />
                           <h5 class="card-title">
-                            <a href="#first" class="nav-link" aria-current="page"
-                              >SPRING</a
+                            <RouterLink class="nav-link" aria-current="page" to="/product/1">
+                              SPRING</RouterLink
                             >
-
                           </h5>
                         </div>
                       </div>
@@ -50,8 +49,8 @@ import LoginAreaMobile from '../components/LoginAreaMobile.vue'
                         <div class="card" style="width: 12rem">
                           <img src="../assets/media/Summer.png" class="card-img-top" alt="..." />
                           <h5 class="card-title">
-                            <a href="#second" class="nav-link" aria-current="page" to="/product"
-                              >SUMMER</a
+                            <RouterLink class="nav-link" aria-current="page" to="/product/2">
+                              SUMMER</RouterLink
                             >
                           </h5>
                         </div>
@@ -60,8 +59,8 @@ import LoginAreaMobile from '../components/LoginAreaMobile.vue'
                         <div class="card" style="width: 12rem">
                           <img src="../assets/media/Autumn.png" class="card-img-top" alt="..." />
                           <h5 class="card-title">
-                            <a href="#third" class="nav-link" aria-current="page" to="/product"
-                              >AUTUMN</a
+                            <RouterLink class="nav-link" aria-current="page" to="/product/3">
+                              AUTUMN</RouterLink
                             >
                           </h5>
                         </div>
@@ -70,8 +69,8 @@ import LoginAreaMobile from '../components/LoginAreaMobile.vue'
                         <div class="card" style="width: 12rem">
                           <img src="../assets/media/Winter.png" class="card-img-top" alt="..." />
                           <h5 class="card-title">
-                            <a href="#fourth" class="nav-link" aria-current="page" to="/product"
-                              >WINTER</a
+                            <RouterLink class="nav-link" aria-current="page" to="/product/4">
+                              WINTER</RouterLink
                             >
                           </h5>
                         </div>
@@ -128,7 +127,7 @@ import LoginAreaMobile from '../components/LoginAreaMobile.vue'
               <RouterLink class="nav-link" aria-current="page" to="/">Home</RouterLink>
             </li>
             <li class="nav-item">
-              <RouterLink class="nav-link" aria-current="page" to="/product">Season</RouterLink>
+              <a href="#seasonLink" class="nav-link" aria-current="page">Season</a>
             </li>
             <li class="nav-item">
               <RouterLink class="nav-link" aria-current="page" to="/about">About</RouterLink>
