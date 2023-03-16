@@ -53,7 +53,7 @@
       <section class="mb-4">
         <div class="col">
           <RouterLink class="navbar-brand" to="/"
-            ><img src="../assets/media/AventurasLogo.png" class="img-fluid" alt="Logo" />
+            ><img src="../assets/media/AventurasLogo2nd.png" class="img-fluid" alt="Logo" />
           </RouterLink>
         </div>
       </section>
@@ -87,7 +87,7 @@ export default {
 
 <style scoped>
 #message {
-  color:#33de15;
+  color: #33de15;
   font-weight: 600;
   font-size: 20px;
 }
