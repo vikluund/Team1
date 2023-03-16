@@ -13,7 +13,7 @@
       </div>
     </div>
     <!-- Right side picture card -->
-    <div class="card mb-4 border-0" style="max-width: 100%">
+    <div class="card mb-4 border-0" id="first" style="max-width: 100%">
       <div class="row g-0">
         <!-- Ändrar columerna i bootstrap, gör bilder större -->
         <div class="col-md-6">
@@ -47,7 +47,7 @@
     </div>
 
     <!-- Left side picture -->
-    <div class="card mb-4 border-0" style="max-width: 100%" dir="rtl">
+    <div class="card mb-4 border-0" id="second" style="max-width: 100%" dir="rtl">
       <div class="row g-0">
         <div class="col-md-6">
           <img src="../assets/media/Snork2.jpg" class="img-fluid" alt="..." />
@@ -79,7 +79,7 @@
     </div>
 
     <!-- Right side picture -->
-    <div class="card mb-4 border-0" style="max-width: 100%">
+    <div class="card mb-4 border-0" id="third" style="max-width: 100%">
       <div class="row g-0">
         <div class="col-md-6">
           <img src="../assets/media/climb1.jpg" class="img-fluid" alt="..." />
@@ -107,7 +107,7 @@
     </div>
 
     <!-- Right side picture -->
-    <div class="card mb-4 border-0" style="max-width: 100%" dir="rtl">
+    <div class="card mb-4 border-0" id="fourth" style="max-width: 100%" dir="rtl">
       <div class="row g-0">
         <div class="col-md-6">
           <img src="../assets/media/HeroImageRaft.jpg" class="img-fluid" alt="..." />
@@ -136,7 +136,7 @@
     </div>
 
     <!-- Right side picture -->
-    <div class="card mb-4 border-0" style="max-width: 100%">
+    <div class="card mb-4 border-0" id="fifth" style="max-width: 100%">
       <div class="row g-0">
         <div class="col-md-6">
           <img src="../assets/media/Ski1.jpg" class="img-fluid" alt="..." />
